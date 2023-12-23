@@ -1,0 +1,19 @@
+/* black background */
+
+body {
+  background-color: #333333;
+}
+
+/* white text */
+
+h1, h2, h3, h4, h5, h6, p, a, li, span, label, input, textarea, button {
+  color: #ffffff;
+}
+
+/* restrict width of content */
+
+.App {
+  min-width: 300px;
+  max-width: 350px;
+  margin: 0 auto;
+}
