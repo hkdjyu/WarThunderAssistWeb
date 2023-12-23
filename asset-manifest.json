@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.606f1a11.css",
-    "main.js": "/static/js/main.ecd82836.js",
-    "static/js/845.abc5d35a.chunk.js": "/static/js/845.abc5d35a.chunk.js",
-    "static/js/787.0f8d78ff.chunk.js": "/static/js/787.0f8d78ff.chunk.js",
-    "static/media/digital-7mono.ttf": "/static/media/digital-7mono.ae951a188b593952b384.ttf",
-    "static/media/air_strike.mp3": "/static/media/air_strike.a923d5f1feb49a5a63f3.mp3",
-    "index.html": "/index.html",
-    "main.606f1a11.css.map": "/static/css/main.606f1a11.css.map",
-    "main.ecd82836.js.map": "/static/js/main.ecd82836.js.map",
-    "845.abc5d35a.chunk.js.map": "/static/js/845.abc5d35a.chunk.js.map",
-    "787.0f8d78ff.chunk.js.map": "/static/js/787.0f8d78ff.chunk.js.map"
+    "main.css": "/WarThunderAssistWeb/static/css/main.3e949d0b.css",
+    "main.js": "/WarThunderAssistWeb/static/js/main.f676c7c6.js",
+    "static/js/845.abc5d35a.chunk.js": "/WarThunderAssistWeb/static/js/845.abc5d35a.chunk.js",
+    "static/js/787.0f8d78ff.chunk.js": "/WarThunderAssistWeb/static/js/787.0f8d78ff.chunk.js",
+    "static/media/digital-7mono.ttf": "/WarThunderAssistWeb/static/media/digital-7mono.ae951a188b593952b384.ttf",
+    "static/media/air_strike.mp3": "/WarThunderAssistWeb/static/media/air_strike.a923d5f1feb49a5a63f3.mp3",
+    "index.html": "/WarThunderAssistWeb/index.html",
+    "main.3e949d0b.css.map": "/WarThunderAssistWeb/static/css/main.3e949d0b.css.map",
+    "main.f676c7c6.js.map": "/WarThunderAssistWeb/static/js/main.f676c7c6.js.map",
+    "845.abc5d35a.chunk.js.map": "/WarThunderAssistWeb/static/js/845.abc5d35a.chunk.js.map",
+    "787.0f8d78ff.chunk.js.map": "/WarThunderAssistWeb/static/js/787.0f8d78ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.606f1a11.css",
-    "static/js/main.ecd82836.js"
+    "static/css/main.3e949d0b.css",
+    "static/js/main.f676c7c6.js"
   ]
 }
