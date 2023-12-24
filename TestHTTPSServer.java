@@ -38,6 +38,11 @@ public class TestHTTPSServer {
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
+            // Set CORS headers
+            exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*"); // Change * to your allowed origin
+            exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+            exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
             String response = "{\"message\":\"Hello from HTTPS server\"}";
             byte[] responseBytes = response.getBytes(StandardCharsets.UTF_8);
 
