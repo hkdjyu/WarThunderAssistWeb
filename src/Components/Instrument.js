@@ -40,14 +40,14 @@ function Instrument() {
         }
         const interval = setInterval(() => {
             try{
-                fetch("http://" + ipAddress + ":" + ipPort + "/state")
+                fetch("https://" + ipAddress + ":" + ipPort + "/state")
                 .then(response => response.json())
                 .then(data => setstateData(data))
                 .catch(err => {
                     const mute = err
                     setIsConnected(false);
                 });
-                fetch("http://" + ipAddress +":" + ipPort + "/indicators")
+                fetch("https://" + ipAddress +":" + ipPort + "/indicators")
                 .then(response => response.json())
                 .then(data => setIndicatorsData(data))
                 .catch(err => {
@@ -69,7 +69,7 @@ function Instrument() {
         }
         const interval = setInterval(() => {
             try{
-                fetch("http://" + ipAddress +":" + ipPort + "/map_obj.json")
+                fetch("https://" + ipAddress +":" + ipPort + "/map_obj.json")
                 .then(response => response.json())
                 .then(data => {
                     setMapData(data)
@@ -93,7 +93,7 @@ function Instrument() {
             return;
         }
         try{
-            fetch("http://" + ipAddress + ":" + ipPort + "/map_info.json")
+            fetch("https://" + ipAddress + ":" + ipPort + "/map_info.json")
             .then(response => response.json())
             .then(data => {
                 setMapBasicData(data)
