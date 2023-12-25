@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+# War Thunder Assist Web - WTAW
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application assist displaying fundalmental flight data for War Thunder Air Battles. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Quick Preview
 
-### `yarn start`
+visit https://wtaw.thomasng.dev/  
+It is noted that you can directly use it on your local computer without changing ip address and ip port.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+But if you need better networking connection, use the application on your mobile device, or customise the code as you like, please read the details below...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- Attitude Indicator
+- Climb degree and Climb rate
+- Speed (IAS), Heading and Altitude display panel
+- Status of air break, flaps and landing gear
+- Air strike warning sound if any plane is within 2.5 km, disregarding altitude
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation Guide
+This guide provides steps to self-host a React web application on your local machine.
 
-### `yarn build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Git installed
+- Node.js (tested on v20.10.0) installed
+- npm (tested on 10.2.3) installed 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can type the following commands in a PowerShell or Command Prompt to check if they are installed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git --version
+node --version
+npm --version
+```
 
-### `yarn eject`
+If they are all installed, somthing look like the below should appear.
+```
+git version 2.37.2.windows.2
+v20.10.0
+10.2.3
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Useful Links
+https://git-scm.com/download/win  (for git installation)  
+https://nodejs.org/en/download  (for node installation)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> After finish installing Node using *Windows Installer* , npm should also be installed with Node.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started (windows 11)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+not tested on windows 10, but should also work fine 
 
-## Learn More
+### 1. **Clone the Repository:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Search and open **PowerShell**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    **[Alternative]**  
+    If you have a desired directory, you can open it through a file explorer, right click empty space, choose **"show more option"**, and click **"open in terminal"**
 
-### Code Splitting
+    **[Contine here]**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Input the following command:
 
-### Analyzing the Bundle Size
+    ```bash
+    git clone https://github.com/hkdjyu/WarThunderAssistWeb.git
+    cd WarThunderAssistWeb
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2. **Install Yarn:**
 
-### Making a Progressive Web App
+    if yarn is install on your system, you can skip this step.
+    You can check it by typing 
+    ```bash
+    yarn --version
+    ```
+    if yarn is installed, a version number (e.g. 1.22.21) should be displayed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    If yarn is not installed, run the following command
 
-### Advanced Configuration
+    ```bash
+    npm install -g yarn
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 3. **Install Dependencies:**
+    ```bash
+    yarn install
+    ```
 
-### Deployment
+    Please wait for a while. It takes around 1 - 10 minute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 4. **Start the Development Server:**
+    ```bash
+    yarn start
+    ```
 
-### `yarn build` fails to minify
+    > DO NOT Close PowerShell until you have finish using it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5. **Access the Web Application:**
+    Open a web browser and go to `http://localhost:3000` to view the React web application.
+
+### 6. **Connect to your devices**
+   
+   **Local Machine**  
+   for computer with more than one monitor, you can open it in a browser and put it in your secondary display. Click `START` directly when a game or a test flight is started. 
+   
+   > DO NOT change the HOST IP ADDRESS and HOST PORT.
+
+
+   **Other Devices (e.g. Phone)**  
+  1.  The devices must have the same internet connection to your computer network. That is, you need to connect your devices to the router that have connected to your computer. The connection can be WiFi or LAN. It doesn't matter.
+   
+  2. Check your computer (with War Thunder Openning) local IP address.  
+      Usually it is 192.168.0.XXX or 192.168.1.XXX  
+      You can check it by search and open cmd.
+
+      type `ipconfig` and look for Ethernet adapter
+
+      ```
+      Ethernet adapter Ethernet:
+
+        Connection-specific DNS Suffix  . :
+        IPv4 Address. . . . . . . . . . . : 192.168.0.133
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 192.168.0.1
+      ```
+
+      The IPv4 Address, here is `192.168.0.133`, is your **computer local IP address**. Please remember it  
+
+  3. Open a web browser on your other device. Go to   `http://<your_local_IP_address>:3000`
+   
+  4. On your device, please change   
+       `Host IP Address:`  to your **local IP address**  
+       Don't forget to click `SET` after finish setting. The updated local address should be displayed directly above the input field.
+
+  5. After finishing HOST IP ADDRESS setting, click `START`
+
+        > DO NOT change the HOST PORT. Leave it with 8111.
+    
+        Please keep in mind that the web application is batery consuming as it needs to keep fetching data from War Thunder. If you are temporarily not need to use it, simply click `STOP`. If you want to quit, just close the browser tab.
+
+### 7. **Close the Host Server**
+   Press `ctrl + c` in your PowerShell window. And then close it  
+   Just close the PowerShell window should also work fine :)
+
+### 8.  **Next Time Use**
+   1. Open Powershell
+   2. Go to the WTAW directory. By default, you can run
+        ```bash
+        cd ./WarThunderAssistWeb
+        ``` 
+   3. Run `yarn start`
