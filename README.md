@@ -2,6 +2,8 @@
 
 A web application assist displaying fundalmental flight data for War Thunder Air Battles. 
 
+<img src="./snapshot.jpg" width="200" />
+
 
 ## Quick Preview
 
