@@ -17,3 +17,51 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, label, input, textarea, button {
   max-width: 350px;
   margin: 0 auto;
 }
+
+.setButton {
+  background-color: black;
+  border: 5px solid #222222;
+  border-radius: 50%;
+  color: white;
+  padding: 1px 14px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.setButton:hover {
+  background-color: #222222;
+}
+
+.startButton {
+  background-color: #4CAF50;
+  border: 5px solid black;
+  border-radius: 10%;
+  color: white;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.startButton:hover {
+  background-color: #3e8e41;
+}
+
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid black;
+  border-radius: 5%;
+  background-color: lightgrey;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-family: 'digital-clock-font';
+}
+
